@@ -1,0 +1,236 @@
+body{
+    font-family: sans-serif;
+    background: #f7f7f7;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.flex_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.btn{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: #ffffff;
+    letter-spacing: 1.1px;
+    padding: .8rem 2rem;
+    border-radius: .3rem;
+    border: .1rem solid rgb(0, 183, 255);
+    cursor: pointer;
+}
+ul{
+    list-style: none;
+}
+i{
+    color: rgb(0, 183, 255);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    background: #00000099;
+    z-index: 1000;
+}
+.nav{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a{
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: #ffffff;
+    transition: all .3s linear;
+}
+.logo a:hover{
+    color: rgb(0, 183, 255);
+}
+.nav ul li{
+    padding: 0 1rem;
+    letter-spacing: 1.2px;
+}
+.nav ul li a{
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+.nav ul li a:hover{
+    color: rgb(0, 183, 255);
+}
+.main_content{
+    min-height: 100vh;
+    background: url(./images/photo1.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    height: 10vh;
+    width: 95vw;
+    background: #00000099;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5rem;
+}
+.sidebar h3{
+    color: #ffffff;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+.sidebar p{
+    color: #ffffff;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    line-height: 2;
+    letter-spacing: 1.1px;
+}
+.sidebar ul li a{
+    color: #ffffff;
+    margin: 0 1rem;
+}
+.sidebar ul li a i{
+    font-size: 1.2rem;
+}
+.showcase{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 700px;
+    background: #00000099;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.flex-case{
+    display: inline-flex;
+    transition: all .3s linear;
+}
+.show{
+    width: 1100px;
+    height: 700px;
+    padding: 1rem;
+    color: #ffffff;
+}
+:is(.alt2, .alt1, .alt3, .alt4){
+    align-items: center;
+}
+:is(.alt2, .alt1, .alt3, .alt4) h2{
+    font-size: 3rem;
+    line-height: 2;
+    text-transform: capitalize;
+}
+:is(.alt2, .alt1, .alt3, .alt4) p{
+    line-height: 2.5;
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+    text-align: center;
+    margin: 2rem 0;
+}
+.alt1 .btn-view{
+    padding: .9rem 2.5rem;
+    transition: all .3s linear;
+}
+.alt1 .btn-view:hover{
+    transform: scale(1.1);
+}
+.work{
+    width: 100%;
+    overflow-y: auto;
+    gap: .5rem;
+}
+.workspace{
+    height: 280px;
+    width: 350px;
+    overflow: hidden;
+}
+.workspace img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s linear;
+}
+.workspace img:hover{
+    transform: scale(1.3);
+}
+.alt4 p span{
+    margin: 0 1rem;
+}
+.alt4 .form{
+    padding: 1rem;
+    width: 500px;
+}
+.alt4 .form input{
+    padding: .8rem 2rem;
+    width: 95%;
+    border-radius: 2rem;
+    background: transparent;
+    outline: none;
+    border: .1rem solid rgb(0, 183, 255);
+    margin: 1rem 0;
+    color: #ffffff;
+}
+.scroll{
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    width: 8vw;
+    height: 50vh;
+    align-items: center;
+    padding: 1rem;
+}
+.scroll .circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: .1rem solid rgb(0, 183, 255);
+    margin: 2rem 0;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    transition: all .3s linear;
+}
+.scroll .circle:hover{
+    width: 60px;
+    border-radius: 1rem;
+}
+.scroll span{   
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: #ffffff;
+    transition: all .3s linear;
+    display: grid;
+    place-items: center;
+    font-size: .6rem;
+}
+.scroll span i{
+    display: none;    
+    text-transform: capitalize;
+}
+.scroll .circle:hover span{
+    height: 23px;
+    width: 43px;
+    border-radius: 1rem;
+}
+.scroll .circle:hover span i{
+    display: initial;
+}
